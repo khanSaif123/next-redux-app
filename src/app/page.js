@@ -1,3 +1,4 @@
+'use client'
 import { A } from "@/component/A";
 import { B } from "@/component/B";
 import { C } from "@/component/C";
