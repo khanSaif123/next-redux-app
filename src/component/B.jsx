@@ -1,12 +1,14 @@
 "use client"
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
+import { useDispatch } from 'react-redux';
 
 export const B = () => {
     let locRef = useRef()
+    let dispatch = useDispatch()
     
     const handleClick = ()=>{
         let loc = locRef.current.value;
-        alert(loc)
+        dispatch({type:"LOC_UPDATE", payload:loc})
     }
   return (
     <div className='mb-10 ml-5 flex gap-5 flex-col border w-[30%] p-10 border-black rounded-md'>

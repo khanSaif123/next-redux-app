@@ -4,10 +4,12 @@ import "./globals.css";
 import { Provider } from "react-redux";
 import { appStore } from "@/statemanagment/appStore";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body className={inter.className}>
